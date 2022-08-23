@@ -1,0 +1,11 @@
+@use "../custom" as *;
+
+@mixin gradient($color1:$plum-dark,$color2:$plum-light) {
+    background: linear-gradient(to right,$color1,$color2);
+}
+@mixin absolutecenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
